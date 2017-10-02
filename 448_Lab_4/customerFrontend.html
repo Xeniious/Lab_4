@@ -1,0 +1,35 @@
+<html>
+	<?php include 'customerBackend.php';?>
+	<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<link href="style.css"
+	rel="stylesheet"
+	type="text/css"/>
+	<script type="text/javascript"
+                 src="fileName.js">
+         </script>
+	<title>Smitty's Web Store</title></head>
+		<form onsubmit="submit()" action="customerBackend.php">
+			<p>Please enter your desired username(must be an email address): <input type="text" name="username" id="username"><br>
+			Please enter the desired password: <input type="text" name="password" id="password"><br></p>
+			<p class="spoopy"> Select the desired items you would like to buy below<br><br>
+			<input type="radio" name = "cat" value="cat" id="cat">A Cat; Price: $49.99; Quantity: <input type="text" id="catQuantity"><br>
+			<input type="radio" name = "1000" value="1000" id="1000">$1000; Price: $1009.99; Quantity: <input type="text" id="1000Quantity"><br>
+			<input type="radio" name = "goonies" value="goonies" id="goonies">VHS tape of The Goonies; Price: $4.99; Quantity: <input type="text" id="gooniesQuantity"><br>
+			<input type="radio" name = "grapes" value="grapes" id="grapes">3 grapes; Price: $0.99; Quantity: <input type="text" id="grapesQuantity"><br>
+			<input type="radio" name = "lamp" value="lamp" id="lamp">Red and Yellow 20 foot tall lava lamp; Price: $599.99; Quantity: <input type="text" id="lampQuantity"><br>
+			<input type="radio" name = "greyCat" value="greyCat" id="greyCat">Another Cat(This one is grey!); Price: $54.99; Quantity: <input type="text" id="greyCatQuantity"><br><br></p>
+			<p>Please select the desired shipping option below:<br>
+			
+			<input type="radio" id="r1" name = "shipping" value="free">Free<br>
+			<input type="radio" id="r2" name = "shipping" value="overnight">$50.00 over night<br>
+			<input type="radio" id="r3" name = "shipping" value="free">$5.00 three day<br><br>
+			
+			<input type="button" name="reset" value="Reset" onclick="reset()"><br>
+			<input type="submit" value="Submit"><br></p>
+		</form>
+	<body>
+	</body>
+	
+</html>

@@ -1,0 +1,22 @@
+style.css
+
+
+p
+{
+	color:black;
+	background-color: Yellow;
+}
+
+p:hover
+{
+	color:yellow;
+	background-color: black;
+}
+
+p.spoopy
+{
+	color: red;
+	background-color: black;
+}
+
+
